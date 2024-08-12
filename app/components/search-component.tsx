@@ -3,16 +3,14 @@
 import { Input } from "@material-tailwind/react";
 import { useState } from "react";
 
-export default function SearchComponent() {
-  const [search, setSearch] = useState("");
-
+export default function SearchComponent({ searchInput, setSearchInput }) {
   return (
     <div>
       <Input
-        value={search}
+        value={searchInput}
         placeholder="Search Images"
         icon={<i className="fa-solid fa-magnifying-glass" />}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => setSearchInput(e.target.value)}
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}
         crossOrigin={undefined}

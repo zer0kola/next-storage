@@ -1,9 +1,9 @@
 "use client";
 
-import DropboxImageList from "components/dropbox-image-list";
-import FileDragDropZone from "components/file-dragdropzone";
-import Logo from "components/logo";
-import SearchComponent from "components/search-component";
+import Logo from "./components/logo";
+import DropboxImageList from "./components/dropbox-image-list";
+import FileDragDropZone from "./components/file-dragdropzone";
+import SearchComponent from "./components/search-component";
 import Image from "next/image";
 import { useState } from "react";
 
